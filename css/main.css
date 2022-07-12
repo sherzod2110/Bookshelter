@@ -339,7 +339,7 @@ a {
 
 .bookmark__list {
   overflow-y: scroll;
-  height: 300px;
+  height: 366px;
 }
 
 .icons-btn {
@@ -452,4 +452,124 @@ a {
   margin-left: 700px;
 }.next-btn {
   margin-right: 400px;
+}
+
+
+.wrapper__bookmarks-result {
+  padding: 25px;
+  width: 268px;
+  border-right: 2px solid #E3E6EB;
+}
+
+.title-bookmark {
+  width: 125px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.text-bookmark {
+  width: 200px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 155.6%;
+}
+
+.wrapper__books-list {
+  background-color: #F8FAFD;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.book-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.titles-wrapper {
+  height: 130px;
+  overflow-y: auto;
+}
+
+
+.books-item {
+  width: 282px;
+  padding: 18px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background: #FFFFFF;
+}
+.img-wrapper {
+  width: 250px;
+  height: 240px;
+  padding: 25px;
+  background-color: #F8FAFD;
+}
+.books-img{
+  width: 200px ;
+  height: 200px ;
+}
+
+.el-bookmark {
+  background: #FFD80D;
+  color: #000000;
+  width: 120px;
+  height: 37px;
+  background: #FFD80D;
+  border-radius: 4px;
+  
+}
+.el-modal {
+  width: 120px;
+  height: 37px;
+  background: rgba(13, 117, 255, 0.05);
+  color: #0D75FF;
+  border-radius: 4px;
+}
+
+.el-read {
+  text-decoration: none;
+  width: 246px;
+  height: 37px;
+  background: #75828A;
+  border-radius: 4px;
+}
+
+.result-bookmark {
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.bookmark-text {
+  max-width: 100px;
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.bookmark-list__item {
+  margin: 0;
+  padding: 0;
+  background: #F8FAFD;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+}
+
+.bookmark-read-img {
+  width: 24px;
+  height: 24px;
+}
+
+.bookmark-delete-img {
+  width: 24px;
+  height: 24px;
 }
