@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href='https://css.gg/user.css' rel='stylesheet'>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+  <main class="home-login">
+  <div class="container">
+<div class="mx-auto pt-5">
+
+ <div class="login-page">
+   <a class="d-inline-block" href="./login.html">
+    <img src="./img/Group 200.svg" alt="" width="226" height="44">
+  </a>
+    <form class="js-login-form mt-4" method="POST" > 
+
+      <label class="user mb-5"  for="user-login">
+        <img class="user-img" src="./img/user.svg" width="30" height="30" alt="user-login">
+        <input class="js-login-input" id="user-login" name="user-login" type="text" placeholder="Username">
+      </label>
+
+      <label class="user-password" for="password"> 
+        <img class="user-img-password" src="./img/lock.svg" width="30" height="30" alt="user"> 
+        <input class="js-password-input rounded" name="password" id="password" type="password" placeholder="Password">
+      </label>
+
+      <p id="loginEnter" class="text-success text-center mt-3 fw-bold">Enter Password With Login</p>
+
+      <button class="navbar__link-btn btn-6">LOGIN</button>
+      <p class="text-white text-end me-3 mt-2 fw-bold">Forgot password?</p>
+    </form>
+ </div>
+  
+</div>
+  </div>
+</main>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="./js/utils.js"></script>
+<script src="./js/login.js"></script>
+</body>
+</html>

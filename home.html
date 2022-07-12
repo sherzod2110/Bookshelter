@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+<body">
+
+  <div class="position-fixed start-0 top-0 end-0 bg-white ">
+    <header>
+      <div class="container">
+        <div class="header__box d-flex mt-4 pb-4 justify-content-between align-items-center">
+          <a href="">
+            <img src="./img/sait-logo.svg" alt="Logo" width="226" height="44">
+          </a>
+          <form class="form">
+            <img class="form__search-img" src="./img/search.svg" alt="Search">
+            <input class="header__form-input" type="text" placeholder="Search books">
+          </form>
+          <div class="d-flex align-items-center gap-3">
+            <button class="js-sun-btn border-0 bg-transparent">
+              <img src="./img/sun.svg" alt="">
+            </button>
+            <button class="header__btn">Logout</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section> <!-- START -->
+      <div class="container">
+          <div class="section__inner">
+            <div class="section__inner-box d-flex justify-content-between ms-auto align-items-center">
+              <p class="hero__text">Showing <span class="text-info">18</span> Result(s)</p>
+              <button class="hero__btn me-3">
+                <img src="./img/calendar.svg" alt="">
+                Order by newest
+              </button>
+            </div>
+          </div>
+        </div>
+      </section> <!-- END START -->
+    </div>
+    
+    <div style="height: 175px;"></div>
+
+    <section> <!-- START -->
+      <div class="container">
+
+      <div class="d-flex">
+
+        <div style="width: 268px;"></div>
+        <div class="section__bookmark position-fixed">
+          <h3 class="heading__bookmark">Bookmarks</h3>
+          <p class="bookmark__text">If you don’t like to read, you haven’t found the right book</p>
+
+          <ul class="bookmark__list p-0">
+
+          </ul>
+        </div>
+
+
+
+        <div>
+          <ul class="rusult-list list-unstyled d-flex justify-content-evenly flex-wrap">
+          
+          </ul>
+
+          <div id="error-list"></div>
+        </div>
+
+          <div class="bnnma justify-content-between bg-white d-flex position-fixed bottom-0 start-0 end-0" style="width: 100%; height: 50px;">
+            <button class="prew-btn d-block border-0 bg-transparent">
+              <img class="icons-btn" src="./img/2040511.png" alt="" width="40" height="40">
+            </button>
+            <div class="numbers">
+            </div>
+            <button class="next-btn d-block border-0 bg-transparent">
+              <img class="icons-btn" src="./img/2040514.png" alt="" width="40" height="40">
+            </button>
+          </div>
+
+      </div>
+      
+    </div>
+  </section><!-- END START -->
+  <div style="height: 20px;"></div>
+<section class="books__section">
+
+</section>
+
+
+
+  <!-- <div class="div-div-modal"></div> -->
+
+
+
+
+
+  <div class="book-info-modal modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+
+
+  <!-- <template id="select__template">
+    <li class="main__left--item">
+        <div class="main__left--item-left">
+            <div class="book__name" id="book__name">Python</div>
+            <div class="book__author" id="book__author">David M. Beazley</div>
+        </div>
+        <div class="main__left--item-right">
+            <button class="open__btn">
+                <img src="./images/book-open.png" alt="book icon" class="book__info">
+            </button>
+            <button class="delete__btn" id="delete__btn">
+                <img src="./images/delete.png" alt="delete" class="book__delete">
+            </button>
+        </div>
+    </li> -->
+</template>
+
+
+
+  <template id="template">
+    <li class="result-item mb-3">        
+      <div class="box-inner-2">
+        <img class="book-img" src="" alt="Rasm kelmadi" width="201" height="202">
+      </div>
+
+      <div class="box-scrol pt-2 px-2">
+        <p class="item__title m-0 mt-2 mb-2">Phyton</p>
+        <p class="item__spn">Troels Andreasen,Ronald R. Yager,Henrik Bulskov,Henning Christiansen,Henrik Legind Larsen</p>
+      </div>
+      <span class="item__year">2009</span>
+      <div class="mt-2 d-flex gap-2">
+        
+        <button class="bookmark-btn btn btn-warning" style="width: 120px; font-weight: 700;">Bookmark</button>
+        <button type="button" class="more__btn" id="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          More Info
+        </button>
+        <!-- <button class="more__btn">More Info</button> -->
+      </div>
+      <a href="" target="_blank" class="btn-read text-decoration-none text-white">Read</a>
+    </li>
+  </template>
+
+
+  <template id="template-book-mark">
+    <li class="result-item-2 mb-3 d-flex">        
+      <p class="book-mark-titel"></p>
+      <button class="book-mark-delet">bos</button>
+    </li>
+  </template>
+
+  <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/home.js"></script>
+</body>
+</html>
